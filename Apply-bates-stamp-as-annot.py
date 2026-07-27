@@ -14,7 +14,7 @@ def get_bates_number():
 
 PDFNet.Initialize(os.getenv("APRYSE_SDK_KEY"))
 
-doc = PDFDoc("Bates_Numbering_Red_Background.pdf")
+doc = PDFDoc("042338.pdf")
 doc.InitSecurityHandler()
 
 # Configure the stamper

@@ -43,7 +43,7 @@ for i in range(1, doc.GetPageCount() + 1):
     id = ann.GetUniqueID()
     print(f"Annotation ID on page {i} is: {id.GetAsPDFText()}")
 
-doc.Save("output_freetext-red3aRightReadonly.pdf", 0)
+doc.Save("output_freetext.pdf", 0)
 doc.Close()
 
 PDFNet.Terminate()

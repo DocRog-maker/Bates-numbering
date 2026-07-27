@@ -37,6 +37,9 @@ def VerifySimple(in_docpath, in_public_key_file_path):
 	print("==========")
 	opts = VerificationOptions(VerificationOptions.e_compatibility_and_archiving)
 	opts.EnableDigestVerification(True)
+	
+	# Add trust root to store of trusted certificates contained in VerificationOptions.
+	opts.AddTrustedCertificate(in_public_key_file_path, VerificationOptions.e_default_trust | VerificationOptions.e_certification_trust)
 
 
 	result = doc.VerifySignedDigitalSignatures(opts)

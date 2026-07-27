@@ -55,10 +55,8 @@ doc_bates_only.FlattenAnnotations()
 
 # Keep only non-Bates annotations in this document, then export them.
 remove_annotations_matching_title(doc_non_bates_only, BATES_TITLE)
-# doc_non_bates_only.Save('TTTTT.pdf', 0)
-non_bates_fdf = doc_non_bates_only.FDFExtract()
-s = non_bates_fdf.SaveAsXFDF('output1.xfdf')
-print(s)
+non_bates_fdf = doc_non_bates_only.FDFExtract(PDFDoc.e_annots_only)
+
 
 # Re-apply non-Bates annotations after Bates annotations are flattened.
 doc_bates_only.FDFUpdate(non_bates_fdf)
