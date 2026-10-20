@@ -1,5 +1,19 @@
-# Example code for demonstrating Bates numbering using the Apryse SDK
-The code should be read in conjunction with the blog
+# Bates Numbering (Python)
+Example Python code for applying and working with Bates numbers using the Apryse SDK.
+
+This repository contains sample scripts and resources that demonstrate how to add Bates numbering to PDF documents in Python workflows.
+
+Related blog post:
+https://apryse.com//blog/add-bates-numbers-to-pdf-python
+
+## What this repo shows
+How to load and process PDFs with the Apryse SDK in Python
+How to apply Bates numbering to pages/documents
+Basic patterns for customizing numbering behavior for document-processing use cases
+
+## Tech stack
+* Python
+* Apryse SDK
 
 You will need a license key. You can get a trial license key from https://docs.apryse.com/core/guides/get-started/trial-key
 
